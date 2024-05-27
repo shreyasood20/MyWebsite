@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7631a87088.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ContactMe</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h3><span class="logo-highlight">Shreya </span>Sood</h3>
+      </div>
+      <nav class="nav-expand">
+        <ul class="nav-items">
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a class="active" href="contact.html">Contact Me</a></li>
+          <li>
+            <a href="#" id="viewmode"><i class="fa-solid fa-moon"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <nav id="more">
+        <i class="fa-solid fa-ellipsis"></i>
+        <div id="display">
+          <ul class="items">
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a class="active" href="contact.html">Contact Me</a></li>
+            <li>
+              <a href="#" id="viewmodesidebar"><i class="fa-solid fa-moon"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="form">
+      <form action="" id="contact-form">
+        <div class="form-container">
+          <h1>Contact Me</h1>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name" required />
+            <label for="email">Email</label>
+            <input type="text" id="email" name="user_email" required />
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+            <label for="query">Query</label>
+            <textarea
+              id="query"
+              name="message"
+              placeholder="Write your query or work details...."
+              style="height: 100px"
+              required
+            ></textarea>
+            <input type="submit" id="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          &copy; <em id="date">learners</em>Tech.com
+        </div>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="script.js"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+  </body>
+</html>

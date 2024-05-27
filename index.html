@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7631a87088.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h3><span class="logo-highlight">Shreya </span>Sood</h3>
+      </div>
+      <nav class="nav-expand">
+        <ul class="nav-items">
+          <li><a href="about.html">About Me</a></li>
+          <li><a class="active" href="index.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li>
+            <a href="#" id="viewmode"><i class="fa-solid fa-moon"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <nav id="more">
+        <i class="fa-solid fa-ellipsis"></i>
+        <div id="display">
+          <ul class="items">
+            <li><a href="about.html">About Me</a></li>
+            <li><a class="active" href="index.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li>
+              <a href="#" id="viewmodesidebar"><i class="fa-solid fa-moon"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="portfolio">
+      <div class="sidebar" #id="sidebar">
+        <div class="photo" id="photo">
+          <img src="img/img.jpg" />
+        </div>
+        <div class="media">
+          <div class="headline">
+            <h4>Check out my</h4>
+          </div>
+          <div class="icons">
+            <ul>
+              <li class="nav-item">
+                <a
+                  href="https://www.hackerrank.com/profile/shreyasood8"
+                  target="_blank"
+                  ><i class="fa-brands fa-hackerrank"></i
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="https://www.linkedin.com/in/shreya-sood-20/"
+                  target="_blank"
+                  ><i id="linkedin" class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="#"><i id="twitter" class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#"><i id="github" class="fab fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="experience">
+        <div class="title">
+          <h3>Portfolio</h3>
+          <div class="description">
+            <p>
+              "I am privileged to have had the opportunity to contribute to
+              esteemed organizations such as Infosys, LTI Mindtree, and
+              GlobalLogic, where I played a significant role in solutioning and
+              designing key aspects of various projects utilizing technologies
+              such as Cloud AWS with TypeScript"
+            </p>
+          </div>
+          <!-- <div class="description">
+            <p>
+              "I am privileged to have had the opportunity to contribute to
+              esteemed organizations such as Infosys, LTI Mindtree, and
+              GlobalLogic, where I played a significant role in solutioning and
+              designing key aspects of various projects utilizing technologies
+              such as Cloud AWS with TypeScript"
+            </p>
+          </div> -->
+        </div>
+        <ul class="companyLogo">
+          <img class="clogo" src="img/infosys_logo.jpg" alt="" />
+          <img class="clogo" src="img/lti_mindtree_logo.jpg" alt="" />
+          <img class="clogo" src="img/globallogic_logo.jpg" alt="" />
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          &copy; <em id="date">learners</em>Tech.com
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
