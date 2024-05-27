@@ -28,6 +28,7 @@ body {
 }
 /* --------------------------------------------header global--------------------------------------------------------------------------- */
 .header {
+  position: relative;
   display: flex;
   flex-direction: row;
   background-color: var(--header-footer-color);
@@ -61,6 +62,13 @@ body {
 }
 #more {
   display: none;
+  position: absolute; /* Position #more absolutely within .header */
+  top: 0; /* Align #more to the top of .header */
+  left: 0; /* Align #more to the left of .header */
+  width: 100%; /* Make #more cover the full width of .header */
+  height: 100%; /* Make #more cover the full height of .header */
+  display: none; /* Hide #more by default */
+  color: var(--header-nav-items);
 }
 .items {
   display: none;
@@ -77,7 +85,10 @@ body {
 @media screen and (max-width: 800px) {
   .header {
     margin: auto;
-    justify-content: center;
+    text-align: center;
+    /* flex-direction: column;
+    align-items: flex-end; */
+    /* justify-content: space-between; */
   }
   .header .logo {
     margin: auto;
@@ -86,10 +97,16 @@ body {
     display: none;
   }
   #more {
-    display: block;
+    text-align: right;
     color: var(--header-nav-items);
+    display: flex;
+    justify-content: flex-end;
   }
   .active-list {
+    position:absolute;
+    top:14px;
+    right: 0;
+    text-align: right;
     display: block;
     width: 50vw;
     height: 100vh;
@@ -311,7 +328,7 @@ input[type="submit"]:hover {
   margin: 5px;
 }
 .introduction h4 {
-  width:200px;
+  width: 200px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -332,7 +349,8 @@ input[type="submit"]:hover {
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from,to {
+  from,
+  to {
     border-color: transparent;
   }
   80% {
