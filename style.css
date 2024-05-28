@@ -62,13 +62,6 @@ body {
 }
 #more {
   display: none;
-  position: absolute; /* Position #more absolutely within .header */
-  top: 0; /* Align #more to the top of .header */
-  left: 0; /* Align #more to the left of .header */
-  width: 100%; /* Make #more cover the full width of .header */
-  height: 100%; /* Make #more cover the full height of .header */
-  display: none; /* Hide #more by default */
-  color: var(--header-nav-items);
 }
 .items {
   display: none;
@@ -86,9 +79,6 @@ body {
   .header {
     margin: auto;
     text-align: center;
-    /* flex-direction: column;
-    align-items: flex-end; */
-    /* justify-content: space-between; */
   }
   .header .logo {
     margin: auto;
@@ -99,13 +89,12 @@ body {
   #more {
     text-align: right;
     color: var(--header-nav-items);
-    display: flex;
-    justify-content: flex-end;
+    display:block;
   }
   .active-list {
     position:absolute;
     top:14px;
-    right: 0;
+    right: 30px;
     text-align: right;
     display: block;
     width: 50vw;
