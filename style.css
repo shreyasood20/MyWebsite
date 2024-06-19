@@ -89,11 +89,11 @@ body {
   #more {
     text-align: right;
     color: var(--header-nav-items);
-    display:block;
+    display: block;
   }
   .active-list {
-    position:absolute;
-    top:14px;
+    position: absolute;
+    top: 14px;
     right: 30px;
     text-align: right;
     display: block;
@@ -216,12 +216,68 @@ body {
   font-style: italic;
 }
 .companyLogo {
+  list-style: none;
   margin: 10px;
+  display: flex;
 }
-
+.companyLogo li {
+  margin: 2px;
+}
 .clogo {
   height: 100px;
   width: 100px;
+}
+/* .visible {
+  display: none;
+  position: absolute;
+} */
+.popup {
+  position: absolute;
+  top: 65%;
+  display: inline-block;
+  cursor: pointer;
+  /* user-select: none; */
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: var(--form-bg-color);
+  color:black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+/* Popup arrow*/
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  left:50%;
+  bottom: 100%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--form-bg-color) transparent ;
+} 
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+/* Add animation (fade in the popup) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 800px) {
   .portfolio {
